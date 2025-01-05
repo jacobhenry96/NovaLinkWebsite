@@ -1,8 +1,11 @@
-/* colors {
+colors {
     color: #D8BFD8;
     color: #9B8F9B;
     color: #7B6888;
-} */
+}
+body {
+    overflow-x: hidden;
+}
 p {
     font-family: "Palanquin Dark", serif;
     font-weight: 600;
@@ -175,7 +178,58 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* Footer Section */
-
+footer {
+    background-color: #7B6888;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-links .footer-logo img{
+    width: 10vw;
+}
+footer .footer-links .footer-fb img{
+    width: 2vw;
+    margin-top: 180%;
+}
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.contact-form {
+    width: 30vw;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+form label {
+    color: white;
+}
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    color: white
+}
+.useful-links h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.useful-links p{
+    margin: -1px;
+}
+.footer-credits {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.footer-credits p{
+    margin: 15px 0px;
+}
 
 /* End Footer Section */
 
