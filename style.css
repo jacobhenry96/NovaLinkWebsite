@@ -226,6 +226,30 @@ h1, h2, h3, h4, h5, h6{
 /* End About Section */
 
 
+/* Portfolio Section */
+.portfolio-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 20px;
+    align-items: center;
+    gap: 50px;
+}
+.portfolio-projects {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: left;
+    gap: 30px;
+}
+.portfolio-projects div {
+    font-size: 25px;
+}
+.portfolio-img img{
+    width: 50vw;
+}
+/* End Portofolio Section */
+
+
 /* Footer Section */
 footer {
     background-color: #7B6888;
