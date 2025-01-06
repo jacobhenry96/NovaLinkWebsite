@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 .hero-text {
     width: 80%
@@ -49,15 +48,25 @@ h1, h2, h3, h4, h5, h6{
     font-size: 100%;
     text-align: left;
 }
+.hero-buttons {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    align-items: left;
+}
+.hero-buttons button {
+    width: 200px;
+}
 .hero-picture {
     height: 85vh;
     width: 50vw;
     background-color: #D8BFD8;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .hero-section img {
-    width: 100%;
+    width: 80%;
 }
 /* End header and hero sections */
 
@@ -90,6 +99,8 @@ h1, h2, h3, h4, h5, h6{
     background-color: #7B6888;
     color: #ffffff;
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   
   .category_section .heading_container {
@@ -161,20 +172,58 @@ h1, h2, h3, h4, h5, h6{
     filter: invert(100%);
     width: 140px;
   }
+  .heading_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .heading_container h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 /* End services section */
 
 /* Testimonial Section */
 .testimonial-section {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 #carouselExampleAutoplaying {
     width: 50%;
 }
 
 /* End Testimonial Section */
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    gap: 150px;
+}
+.about-text {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-text h2{
+    font-size: 300%;
+}
+.about-text p{
+    font-size: 125%;
+}
+.about-text button{
+    width: 150px;
+    margin-right: 30px;
+}
+.about-img img {
+    width: 20vw;
+}
+/* End About Section */
 
 
 /* Footer Section */
@@ -194,8 +243,8 @@ footer .footer-links .footer-fb img{
 }
 .main-footer {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 .contact-form {
     width: 30vw;
@@ -217,9 +266,22 @@ form label {
 .useful-links h3{
     margin-bottom: 15px;
     font-size: 30px;
+    text-transform: uppercase;
 }
 .useful-links p{
     margin: -1px;
+}
+.contact-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.contact-footer div {
+    display: flex;
+    gap: 10px;
+}
+.contact-footer div p{
+    color: white;
 }
 .footer-credits {
     width: 100vw;
